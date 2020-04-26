@@ -43,7 +43,7 @@ class Detect:
         input_img = Variable(img.type(Tensor))
         with torch.no_grad():
             detections = self.__model(input_img)
-            detections = non_max_suppression(detections, 0.9, 0.2)
+            detections = non_max_suppression(detections, 0.85, 0.2)
         res_detect = []
         if detections[0] is not None:
             detections = detections[0]
