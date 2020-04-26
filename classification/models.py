@@ -32,7 +32,7 @@ class ResNet152(nn.Module):
             # print(y_hat)
             self.loss = nn.CrossEntropyLoss()(y_hat, target)
             self.acc = (y_hat.argmax(dim=1) == target).sum().float().item()
-        return y_hat
+        return y_hat.argmax(dim=1)
 
     def eval_acc(self, data_iter, the_device=None):
         net = self.net
