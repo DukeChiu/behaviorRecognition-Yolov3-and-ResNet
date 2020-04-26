@@ -1,0 +1,16 @@
+2020-04-24 17:01:16,256 - __main__ - ERROR - name 'get_process' is not defined failed to change the consumers
+2020-04-25 11:03:49,402 - pika.adapters.utils.io_services_utils - ERROR - Socket failed to connect: <socket.socket fd=1280, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=6, laddr=('::', 61768, 0, 0)>; error=10061 (Unknown error)
+2020-04-25 11:03:49,402 - pika.adapters.utils.connection_workflow - ERROR - TCP Connection attempt failed: ConnectionRefusedError(10061, 'Unknown error'); dest=(<AddressFamily.AF_INET6: 23>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('::1', 5672, 0, 0))
+2020-04-25 11:03:49,402 - pika.adapters.utils.connection_workflow - ERROR - AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error')
+2020-04-25 11:03:51,423 - pika.adapters.utils.io_services_utils - ERROR - Socket failed to connect: <socket.socket fd=1280, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 61776)>; error=10061 (Unknown error)
+2020-04-25 11:03:51,423 - pika.adapters.utils.connection_workflow - ERROR - TCP Connection attempt failed: ConnectionRefusedError(10061, 'Unknown error'); dest=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('127.0.0.1', 5672))
+2020-04-25 11:03:51,423 - pika.adapters.utils.connection_workflow - ERROR - AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error')
+2020-04-25 11:03:51,423 - pika.adapters.utils.connection_workflow - ERROR - AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 2 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error'); first exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error').
+2020-04-25 11:03:51,423 - pika.adapters.utils.connection_workflow - ERROR - AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 2 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error'); first exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error')
+2020-04-25 11:03:51,423 - pika.adapters.blocking_connection - ERROR - Connection workflow failed: AMQPConnectionWorkflowFailed: 2 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error'); first exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error')
+2020-04-25 11:03:51,423 - pika.adapters.blocking_connection - ERROR - Error in _create_connection().
+Traceback (most recent call last):
+  File "E:\Code\python\PyTorch-YOLOv3\lib\site-packages\pika\adapters\blocking_connection.py", line 450, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.AMQPConnectionError
+2020-04-25 11:03:51,423 - __main__ - ERROR -  can not set a channel

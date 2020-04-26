@@ -1,0 +1,209 @@
+2020-04-24 20:23:01,498 - __main__ - ERROR - False 100.jpg
+2020-04-24 20:23:01,932 - __main__ - ERROR - False 200.jpg
+2020-04-24 20:23:02,377 - __main__ - ERROR - False 300.jpg
+2020-04-24 20:23:02,886 - __main__ - ERROR - False 400.jpg
+2020-04-24 20:23:03,386 - __main__ - ERROR - False 500.jpg
+2020-04-24 20:23:04,276 - __main__ - ERROR - False 600.jpg
+2020-04-24 20:23:05,617 - __main__ - ERROR - False 700.jpg
+2020-04-24 20:23:07,055 - __main__ - ERROR - False 800.jpg
+2020-04-24 20:23:08,481 - __main__ - ERROR - False 900.jpg
+2020-04-24 20:23:09,824 - __main__ - ERROR - False 1000.jpg
+2020-04-24 20:23:11,130 - __main__ - ERROR - False 1100.jpg
+2020-04-24 20:23:40,916 - __main__ - ERROR - False 100.jpg
+2020-04-24 20:23:42,426 - __main__ - ERROR - False 200.jpg
+2020-04-24 20:23:44,297 - __main__ - ERROR - False 300.jpg
+2020-04-24 20:23:46,226 - __main__ - ERROR - False 400.jpg
+2020-04-24 20:23:48,063 - __main__ - ERROR - True 500.jpg
+2020-04-24 20:23:49,415 - __main__ - ERROR - False 600.jpg
+2020-04-24 20:23:51,248 - __main__ - ERROR - False 700.jpg
+2020-04-25 11:03:37,415 - pika.adapters.utils.io_services_utils - ERROR - Socket failed to connect: <socket.socket fd=1492, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=6, laddr=('::', 61728, 0, 0)>; error=10061 (Unknown error)
+2020-04-25 11:03:37,435 - pika.adapters.utils.connection_workflow - ERROR - TCP Connection attempt failed: ConnectionRefusedError(10061, 'Unknown error'); dest=(<AddressFamily.AF_INET6: 23>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('::1', 5672, 0, 0))
+2020-04-25 11:03:37,435 - pika.adapters.utils.connection_workflow - ERROR - AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error')
+2020-04-25 11:03:39,466 - pika.adapters.utils.io_services_utils - ERROR - Socket failed to connect: <socket.socket fd=1492, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 61736)>; error=10061 (Unknown error)
+2020-04-25 11:03:39,466 - pika.adapters.utils.connection_workflow - ERROR - TCP Connection attempt failed: ConnectionRefusedError(10061, 'Unknown error'); dest=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('127.0.0.1', 5672))
+2020-04-25 11:03:39,466 - pika.adapters.utils.connection_workflow - ERROR - AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error')
+2020-04-25 11:03:39,466 - pika.adapters.utils.connection_workflow - ERROR - AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 2 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error'); first exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error').
+2020-04-25 11:03:39,466 - pika.adapters.utils.connection_workflow - ERROR - AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 2 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error'); first exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error')
+2020-04-25 11:03:39,466 - pika.adapters.blocking_connection - ERROR - Connection workflow failed: AMQPConnectionWorkflowFailed: 2 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error'); first exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error')
+2020-04-25 11:03:39,466 - pika.adapters.blocking_connection - ERROR - Error in _create_connection().
+Traceback (most recent call last):
+  File "E:\Code\python\PyTorch-YOLOv3\lib\site-packages\pika\adapters\blocking_connection.py", line 450, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.AMQPConnectionError
+2020-04-25 11:03:39,496 - __main__ - ERROR -  can not set a server channel
+2020-04-25 11:03:41,521 - pika.adapters.utils.io_services_utils - ERROR - Socket failed to connect: <socket.socket fd=1596, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=6, laddr=('::', 61743, 0, 0)>; error=10061 (Unknown error)
+2020-04-25 11:03:41,521 - pika.adapters.utils.connection_workflow - ERROR - TCP Connection attempt failed: ConnectionRefusedError(10061, 'Unknown error'); dest=(<AddressFamily.AF_INET6: 23>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('::1', 5672, 0, 0))
+2020-04-25 11:03:41,521 - pika.adapters.utils.connection_workflow - ERROR - AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error')
+2020-04-25 11:03:43,543 - pika.adapters.utils.io_services_utils - ERROR - Socket failed to connect: <socket.socket fd=1596, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 61749)>; error=10061 (Unknown error)
+2020-04-25 11:03:43,543 - pika.adapters.utils.connection_workflow - ERROR - TCP Connection attempt failed: ConnectionRefusedError(10061, 'Unknown error'); dest=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('127.0.0.1', 5672))
+2020-04-25 11:03:43,543 - pika.adapters.utils.connection_workflow - ERROR - AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error')
+2020-04-25 11:03:43,543 - pika.adapters.utils.connection_workflow - ERROR - AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 2 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error'); first exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error').
+2020-04-25 11:03:43,543 - pika.adapters.utils.connection_workflow - ERROR - AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 2 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error'); first exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error')
+2020-04-25 11:03:43,543 - pika.adapters.blocking_connection - ERROR - Connection workflow failed: AMQPConnectionWorkflowFailed: 2 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error'); first exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error')
+2020-04-25 11:03:43,543 - pika.adapters.blocking_connection - ERROR - Error in _create_connection().
+Traceback (most recent call last):
+  File "E:\Code\python\PyTorch-YOLOv3\lib\site-packages\pika\adapters\blocking_connection.py", line 450, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.AMQPConnectionError
+2020-04-25 11:03:43,543 - __main__ - ERROR -  can not set a server channel
+2020-04-25 11:04:41,510 - pika.adapters.utils.io_services_utils - ERROR - Socket failed to connect: <socket.socket fd=588, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=6, laddr=('::', 62059, 0, 0)>; error=10061 (Unknown error)
+2020-04-25 11:04:41,511 - pika.adapters.utils.connection_workflow - ERROR - TCP Connection attempt failed: ConnectionRefusedError(10061, 'Unknown error'); dest=(<AddressFamily.AF_INET6: 23>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('::1', 5672, 0, 0))
+2020-04-25 11:04:41,511 - pika.adapters.utils.connection_workflow - ERROR - AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error')
+2020-04-25 11:04:43,521 - pika.adapters.utils.io_services_utils - ERROR - Socket failed to connect: <socket.socket fd=588, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 62070)>; error=10061 (Unknown error)
+2020-04-25 11:04:43,521 - pika.adapters.utils.connection_workflow - ERROR - TCP Connection attempt failed: ConnectionRefusedError(10061, 'Unknown error'); dest=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('127.0.0.1', 5672))
+2020-04-25 11:04:43,521 - pika.adapters.utils.connection_workflow - ERROR - AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error')
+2020-04-25 11:04:43,521 - pika.adapters.utils.connection_workflow - ERROR - AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 2 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error'); first exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error').
+2020-04-25 11:04:43,521 - pika.adapters.utils.connection_workflow - ERROR - AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 2 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error'); first exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error')
+2020-04-25 11:04:43,521 - pika.adapters.blocking_connection - ERROR - Connection workflow failed: AMQPConnectionWorkflowFailed: 2 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error'); first exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error')
+2020-04-25 11:04:43,521 - pika.adapters.blocking_connection - ERROR - Error in _create_connection().
+Traceback (most recent call last):
+  File "E:\Code\python\PyTorch-YOLOv3\lib\site-packages\pika\adapters\blocking_connection.py", line 450, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.AMQPConnectionError
+2020-04-25 11:04:43,521 - __main__ - ERROR -  can not set a server channel
+2020-04-25 11:04:45,541 - pika.adapters.utils.io_services_utils - ERROR - Socket failed to connect: <socket.socket fd=1632, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=6, laddr=('::', 62079, 0, 0)>; error=10061 (Unknown error)
+2020-04-25 11:04:45,541 - pika.adapters.utils.connection_workflow - ERROR - TCP Connection attempt failed: ConnectionRefusedError(10061, 'Unknown error'); dest=(<AddressFamily.AF_INET6: 23>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('::1', 5672, 0, 0))
+2020-04-25 11:04:45,541 - pika.adapters.utils.connection_workflow - ERROR - AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error')
+2020-04-25 11:04:47,564 - pika.adapters.utils.io_services_utils - ERROR - Socket failed to connect: <socket.socket fd=1632, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 62087)>; error=10061 (Unknown error)
+2020-04-25 11:04:47,564 - pika.adapters.utils.connection_workflow - ERROR - TCP Connection attempt failed: ConnectionRefusedError(10061, 'Unknown error'); dest=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('127.0.0.1', 5672))
+2020-04-25 11:04:47,564 - pika.adapters.utils.connection_workflow - ERROR - AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error')
+2020-04-25 11:04:47,564 - pika.adapters.utils.connection_workflow - ERROR - AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 2 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error'); first exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error').
+2020-04-25 11:04:47,564 - pika.adapters.utils.connection_workflow - ERROR - AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 2 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error'); first exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error')
+2020-04-25 11:04:47,564 - pika.adapters.blocking_connection - ERROR - Connection workflow failed: AMQPConnectionWorkflowFailed: 2 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error'); first exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error')
+2020-04-25 11:04:47,564 - pika.adapters.blocking_connection - ERROR - Error in _create_connection().
+Traceback (most recent call last):
+  File "E:\Code\python\PyTorch-YOLOv3\lib\site-packages\pika\adapters\blocking_connection.py", line 450, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.AMQPConnectionError
+2020-04-25 11:04:47,564 - __main__ - ERROR -  can not set a server channel
+2020-04-25 11:07:30,029 - __main__ - ERROR - True 100.jpg
+2020-04-25 11:07:30,566 - __main__ - ERROR - False 200.jpg
+2020-04-25 11:07:31,189 - __main__ - ERROR - True 300.jpg
+2020-04-25 11:07:31,585 - __main__ - ERROR - False 400.jpg
+2020-04-25 11:07:31,975 - __main__ - ERROR - True 500.jpg
+2020-04-25 11:07:32,385 - __main__ - ERROR - False 600.jpg
+2020-04-25 11:07:32,795 - __main__ - ERROR - True 700.jpg
+2020-04-25 11:07:33,185 - __main__ - ERROR - False 800.jpg
+2020-04-25 11:10:02,404 - __main__ - ERROR - True AZ5A5962100.jpg
+2020-04-25 11:10:04,404 - __main__ - ERROR - False AZ5A5962200.jpg
+2020-04-25 11:10:06,498 - __main__ - ERROR - True AZ5A5962300.jpg
+2020-04-25 11:10:08,633 - __main__ - ERROR - False AZ5A5962400.jpg
+2020-04-25 11:10:10,843 - __main__ - ERROR - True AZ5A5962500.jpg
+2020-04-25 11:10:13,509 - __main__ - ERROR - False AZ5A5962600.jpg
+2020-04-25 11:10:15,487 - __main__ - ERROR - True AZ5A5962700.jpg
+2020-04-25 11:10:17,526 - __main__ - ERROR - False AZ5A5962800.jpg
+2020-04-25 11:11:19,688 - __main__ - ERROR - True AZ5A5962100.jpg
+2020-04-25 11:11:21,505 - __main__ - ERROR - False AZ5A5962200.jpg
+2020-04-25 11:11:23,265 - __main__ - ERROR - True AZ5A5962300.jpg
+2020-04-25 11:11:25,085 - __main__ - ERROR - False AZ5A5962400.jpg
+2020-04-25 11:11:28,273 - __main__ - ERROR - True AZ5A5962500.jpg
+2020-04-25 11:11:29,966 - __main__ - ERROR - False AZ5A5962600.jpg
+2020-04-25 11:11:31,617 - __main__ - ERROR - True AZ5A5962700.jpg
+2020-04-25 11:11:33,291 - __main__ - ERROR - False AZ5A5962800.jpg
+2020-04-25 11:14:58,965 - __main__ - ERROR - False hz2100.jpg
+2020-04-25 11:15:02,130 - __main__ - ERROR - False hz2200.jpg
+2020-04-25 11:15:06,722 - __main__ - ERROR - False hz2300.jpg
+2020-04-25 11:15:15,597 - __main__ - ERROR - False hz2400.jpg
+2020-04-25 11:15:19,998 - __main__ - ERROR - False hz2500.jpg
+2020-04-25 11:15:25,820 - __main__ - ERROR - False hz2600.jpg
+2020-04-25 11:15:27,532 - __main__ - ERROR - False hz2700.jpg
+2020-04-25 11:15:30,548 - __main__ - ERROR - False hz2800.jpg
+2020-04-25 11:15:36,256 - __main__ - ERROR - False hz2900.jpg
+2020-04-25 11:15:38,029 - __main__ - ERROR - False hz21000.jpg
+2020-04-25 11:15:39,739 - __main__ - ERROR - False hz21100.jpg
+2020-04-25 11:17:24,516 - __main__ - ERROR - True AZ5A5962100.jpg
+2020-04-25 11:17:26,332 - __main__ - ERROR - True AZ5A5962200.jpg
+2020-04-25 11:17:28,112 - __main__ - ERROR - False AZ5A5962300.jpg
+2020-04-25 11:17:29,933 - __main__ - ERROR - True AZ5A5962400.jpg
+2020-04-25 11:17:34,423 - __main__ - ERROR - True AZ5A5962500.jpg
+2020-04-25 11:17:36,156 - __main__ - ERROR - False AZ5A5962600.jpg
+2020-04-25 11:17:37,910 - __main__ - ERROR - False AZ5A5962700.jpg
+2020-04-25 11:17:39,581 - __main__ - ERROR - False AZ5A5962800.jpg
+2020-04-25 11:18:30,395 - __main__ - ERROR - False hz2100.jpg
+2020-04-25 11:18:36,249 - __main__ - ERROR - True hz2200.jpg
+2020-04-25 11:18:40,691 - __main__ - ERROR - False hz2300.jpg
+2020-04-25 11:18:46,513 - __main__ - ERROR - False hz2400.jpg
+2020-04-25 11:18:50,953 - __main__ - ERROR - False hz2500.jpg
+2020-04-25 11:18:52,751 - __main__ - ERROR - False hz2600.jpg
+2020-04-25 11:18:55,768 - __main__ - ERROR - False hz2700.jpg
+2020-04-25 11:18:58,734 - __main__ - ERROR - False hz2800.jpg
+2020-04-25 11:19:04,324 - __main__ - ERROR - True hz2900.jpg
+2020-04-25 11:19:09,928 - __main__ - ERROR - False hz21000.jpg
+2020-04-25 11:19:18,219 - __main__ - ERROR - True hz21100.jpg
+2020-04-25 11:20:49,803 - __main__ - ERROR - True AZ5A5962100.jpg
+2020-04-25 11:20:51,603 - __main__ - ERROR - True AZ5A5962200.jpg
+2020-04-25 11:20:54,726 - __main__ - ERROR - True AZ5A5962300.jpg
+2020-04-25 11:20:56,462 - __main__ - ERROR - True AZ5A5962400.jpg
+2020-04-25 11:20:58,240 - __main__ - ERROR - True AZ5A5962500.jpg
+2020-04-25 11:21:00,040 - __main__ - ERROR - False AZ5A5962600.jpg
+2020-04-25 11:21:03,183 - __main__ - ERROR - True AZ5A5962700.jpg
+2020-04-25 11:21:04,790 - __main__ - ERROR - True AZ5A5962800.jpg
+2020-04-25 11:21:58,953 - __main__ - ERROR - True AZ5A5962100.jpg
+2020-04-25 11:22:00,959 - __main__ - ERROR - True AZ5A5962200.jpg
+2020-04-25 11:22:02,720 - __main__ - ERROR - True AZ5A5962300.jpg
+2020-04-25 11:22:04,520 - __main__ - ERROR - True AZ5A5962400.jpg
+2020-04-25 11:22:06,402 - __main__ - ERROR - True AZ5A5962500.jpg
+2020-04-25 11:22:06,855 - __main__ - ERROR - False AZ5A5962600.jpg
+2020-04-25 11:22:10,601 - __main__ - ERROR - False AZ5A5962700.jpg
+2020-04-25 11:22:13,074 - __main__ - ERROR - False AZ5A5962800.jpg
+2020-04-25 11:22:52,012 - __main__ - ERROR - False hz2100.jpg
+2020-04-25 11:22:53,894 - __main__ - ERROR - False hz2200.jpg
+2020-04-25 11:22:56,094 - __main__ - ERROR - False hz2300.jpg
+2020-04-25 11:22:58,303 - __main__ - ERROR - False hz2400.jpg
+2020-04-25 11:23:00,473 - __main__ - ERROR - False hz2500.jpg
+2020-04-25 11:23:02,720 - __main__ - ERROR - False hz2600.jpg
+2020-04-25 11:23:04,924 - __main__ - ERROR - False hz2700.jpg
+2020-04-25 11:23:06,904 - __main__ - ERROR - False hz2800.jpg
+2020-04-25 11:23:08,789 - __main__ - ERROR - False hz2900.jpg
+2020-04-25 11:23:09,593 - __main__ - ERROR - False hz21000.jpg
+2020-04-25 11:23:11,615 - __main__ - ERROR - False hz21100.jpg
+2020-04-25 11:23:38,050 - __main__ - ERROR - False hz2100.jpg
+2020-04-25 11:23:39,816 - __main__ - ERROR - False hz2200.jpg
+2020-04-25 11:23:41,780 - __main__ - ERROR - False hz2300.jpg
+2020-04-25 11:23:43,784 - __main__ - ERROR - False hz2400.jpg
+2020-04-25 11:23:46,013 - __main__ - ERROR - False hz2500.jpg
+2020-04-25 11:23:48,239 - __main__ - ERROR - False hz2600.jpg
+2020-04-25 11:23:50,542 - __main__ - ERROR - False hz2700.jpg
+2020-04-25 11:23:52,884 - __main__ - ERROR - False hz2800.jpg
+2020-04-25 11:23:55,321 - __main__ - ERROR - False hz2900.jpg
+2020-04-25 11:23:56,081 - __main__ - ERROR - False hz21000.jpg
+2020-04-25 11:23:58,671 - __main__ - ERROR - False hz21100.jpg
+2020-04-25 11:24:27,458 - __main__ - ERROR - False hz2100.jpg
+2020-04-25 11:24:29,219 - __main__ - ERROR - False hz2200.jpg
+2020-04-25 11:24:30,956 - __main__ - ERROR - False hz2300.jpg
+2020-04-25 11:24:32,711 - __main__ - ERROR - False hz2400.jpg
+2020-04-25 11:24:34,548 - __main__ - ERROR - False hz2500.jpg
+2020-04-25 11:24:36,722 - __main__ - ERROR - False hz2600.jpg
+2020-04-25 11:24:38,926 - __main__ - ERROR - False hz2700.jpg
+2020-04-25 11:24:41,117 - __main__ - ERROR - False hz2800.jpg
+2020-04-25 11:24:43,433 - __main__ - ERROR - False hz2900.jpg
+2020-04-25 11:24:45,810 - __main__ - ERROR - False hz21000.jpg
+2020-04-25 11:24:46,573 - __main__ - ERROR - False hz21100.jpg
+2020-04-25 11:25:11,065 - __main__ - ERROR - [Errno 2] No such file or directory: './temp_file/9´©Ëó100.jpg' when judge photo
+2020-04-25 11:25:13,060 - __main__ - ERROR - [Errno 2] No such file or directory: './temp_file/9´©Ëó200.jpg' when judge photo
+2020-04-25 11:25:15,040 - __main__ - ERROR - [Errno 2] No such file or directory: './temp_file/9´©Ëó300.jpg' when judge photo
+2020-04-25 11:25:17,021 - __main__ - ERROR - [Errno 2] No such file or directory: './temp_file/9´©Ëó400.jpg' when judge photo
+2020-04-25 11:25:18,994 - __main__ - ERROR - [Errno 2] No such file or directory: './temp_file/9´©Ëó500.jpg' when judge photo
+2020-04-25 11:25:20,759 - __main__ - ERROR - [Errno 2] No such file or directory: './temp_file/9´©Ëó600.jpg' when judge photo
+2020-04-25 11:25:22,794 - __main__ - ERROR - [Errno 2] No such file or directory: './temp_file/9´©Ëó700.jpg' when judge photo
+2020-04-25 11:26:37,754 - __main__ - ERROR - False 9cs100.jpg
+2020-04-25 11:26:43,583 - __main__ - ERROR - False 9cs200.jpg
+2020-04-25 11:26:46,758 - __main__ - ERROR - False 9cs300.jpg
+2020-04-25 11:26:49,865 - __main__ - ERROR - False 9cs400.jpg
+2020-04-25 11:26:54,196 - __main__ - ERROR - False 9cs500.jpg
+2020-04-25 11:26:57,175 - __main__ - ERROR - True 9cs600.jpg
+2020-04-25 11:27:02,744 - __main__ - ERROR - True 9cs700.jpg
+2020-04-25 11:28:23,304 - __main__ - ERROR - False 9cs100.jpg
+2020-04-25 11:28:26,331 - __main__ - ERROR - False 9cs200.jpg
+2020-04-25 11:28:28,074 - __main__ - ERROR - False 9cs300.jpg
+2020-04-25 11:28:29,869 - __main__ - ERROR - False 9cs400.jpg
+2020-04-25 11:28:31,600 - __main__ - ERROR - False 9cs500.jpg
+2020-04-25 11:28:33,360 - __main__ - ERROR - False 9cs600.jpg
+2020-04-25 11:28:35,060 - __main__ - ERROR - False 9cs700.jpg
+2020-04-26 14:01:47,607 - __main__ - ERROR - False 9cs100.jpg
+2020-04-26 14:01:50,690 - __main__ - ERROR - False 9cs200.jpg
+2020-04-26 14:01:52,455 - __main__ - ERROR - False 9cs300.jpg
+2020-04-26 14:01:54,158 - __main__ - ERROR - False 9cs400.jpg
+2020-04-26 14:01:55,827 - __main__ - ERROR - False 9cs500.jpg
+2020-04-26 14:01:57,570 - __main__ - ERROR - False 9cs600.jpg
+2020-04-26 14:01:59,366 - __main__ - ERROR - False 9cs700.jpg
