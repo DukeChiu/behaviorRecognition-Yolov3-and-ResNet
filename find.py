@@ -35,11 +35,11 @@ if __name__ == '__main__':
             while rval:
                 rval, frame = vc.read()
                 if c % timeF == 0:
-                    file_path = config.root_path + config.temp_file + opt.video[:-4] + str(c) + '.jpg'
+                    file_path = config.root_path + config.temp_file + opt.video[:-4] + '_' + str(c) + '.jpg'
                     cv2.imwrite(file_path, frame)
                     try:
                         chan.basic_publish(exchange='', routing_key=config.queue_name,
-                                           body=opt.video[:-4] + str(c) + '.jpg')
+                                           body=opt.video[:-4] + '_' + str(c) + '.jpg')
                     except Exception as e:
                         logger.error(str(e))
 
