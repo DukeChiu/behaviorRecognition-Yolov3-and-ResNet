@@ -4,7 +4,9 @@ import argparse
 import logging
 import cv2
 import os
-
+from PIL import ImageGrab, Image
+import time
+import numpy as np
 logging.basicConfig(level=logging.ERROR, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
                     filename='log/find_error.log')
 logger = logging.getLogger(__name__)
@@ -13,6 +15,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument("--video", type=str, default=None, help="The offline video's path")
     parser.add_argument("--log", type=str, default='offline_log/', help="The offline video's log path")
+    parser.add_argument("--interval", type=float, default=1.5, help="The interval time to get the frame")
     opt = parser.parse_args()
     try:
         mq_conn = pika.BlockingConnection(pika.ConnectionParameters(config.queue_domain,
@@ -48,5 +51,19 @@ if __name__ == '__main__':
             vc.release()
             chan.close()
         else:
-            pass
+            file_path =  config.root_path + config.temp_file
+            time.sleep(3)
+            while True:
+                img = ImageGrab.grab()
+                img = np.array(img.getdata(), np.uint8).reshape(img.size[1], img.size[0], 3)
+                img = Image.fromarray(img)
+                time_stamp = str(int(time.time()))
+                img.save(file_path + time_stamp + '.jpg')
+                try:
+                    chan.basic_publish(exchange='', routing_key=config.queue_name,
+                                       body=time_stamp + '.jpg')
+                except Exception as e:
+                    logger.error(str(e))
+                time.sleep(opt.interval)
+
         #
