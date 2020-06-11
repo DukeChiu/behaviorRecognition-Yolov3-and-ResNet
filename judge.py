@@ -5,6 +5,7 @@ from PIL import Image
 from detection import detect_handler
 import torch
 from classification import classify_handler
+
 # import os
 # import cv2
 
@@ -22,7 +23,6 @@ class Judge:
         img_value = self.__resize(img_value, 416)
         img_value = torch.unsqueeze(img_value, dim=0)
         person_boxes = self.detect_handler.detect(img_value, img_origin.size[::-1])
-        # print(person_boxes)
         if len(person_boxes) == 0:
             return False
         classify_res = self.classify_handler.classify(self.__format_boxes(img_origin, person_boxes))
@@ -33,11 +33,8 @@ class Judge:
     def __pad_to_square(self, img, pad_value):
         c, h, w = img.shape
         dim_diff = np.abs(h - w)
-        # (upper / left) padding and (lower / right) padding
         pad1, pad2 = dim_diff // 2, dim_diff - dim_diff // 2
-        # Determine padding
         pad = (0, 0, pad1, pad2) if h <= w else (pad1, pad2, 0, 0)
-        # Add padding
         img = F.pad(img, pad, "constant", value=pad_value)
 
         return img
@@ -50,14 +47,13 @@ class Judge:
         person_value = []
         for person_box in person_boxes:
             person_crop = img_orign.crop((person_box[i] for i in range(4)))
-            # person_crop.show()
+            # person_crop.save('test_2.jpg')
             person_crop.convert('RGB')
             person_crop_value = self.__resize(self.__pad_to_square(transforms.ToTensor()(person_crop).float(), 0))
             person_value.append(person_crop_value)
-        # print(person_value)
         return torch.stack(person_value, dim=0)
 
 
 if __name__ == '__main__':
     judge_handler = Judge()
-    print(judge_handler.judge('monitor_log\AZ5A5962500.jpg'))
+    print(judge_handler.judge('000812.jpg'))
